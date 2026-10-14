@@ -1,6 +1,10 @@
 # SpendWise — Personal Budget Tracker
 
-A responsive, beginner-friendly budget tracker built for the PLP Web Development Fundamentals Week 2 assignment. It extends the Week 1 SpendWise concept with structured data, richer content, accessible controls, and deliberate visual hierarchy.
+A responsive budget tracker prepared for the PLP Web Development Fundamentals Week 2 assignment.
+
+## Source project note
+
+The Week 1 `index.html` and `style.css` files were not present in the connected GitHub repositories or the available workspace. This repository therefore contains a self-contained SpendWise implementation based on the Week 2 assignment brief. If you have the original Week 1 files, use them as the starting point and merge the Week 2 sections and styles into those files before final grading.
 
 ## Files
 
