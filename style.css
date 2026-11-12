@@ -201,3 +201,114 @@ button:focus-visible, a:focus-visible, summary:focus-visible { outline: 3px soli
   .expenses-section, .add-expense-section, .media-panel { padding: 21px; }
   .site-footer { flex-direction: column; gap: 4px; }
 }
+
+/* Week 3: Visual identity refinements */
+:root {
+  --ink: #20312f;
+  --muted: #71817e;
+  --green: #176b67;
+  --green-dark: #10524f;
+  --mint: #ddf3ed;
+  --lime: #d7f28e;
+  --line: #e1eae7;
+  --paper: #f4f7f6;
+  --white: #ffffff;
+  --shadow: 0 14px 38px rgba(25, 63, 57, .075);
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  line-height: 1.6;
+}
+
+h1, h2, .brand, .summary-card strong, .month-card strong {
+  font-family: "Manrope", sans-serif;
+}
+
+.welcome-card {
+  border: 1px solid rgba(255, 255, 255, .16);
+  border-radius: 24px;
+  box-shadow: 0 18px 42px rgba(23, 107, 103, .16);
+}
+
+.summary-card,
+.panel {
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+}
+
+.expenses-section,
+.add-expense-section {
+  padding: 28px;
+}
+
+th, td {
+  padding: 14px 13px;
+  border-color: var(--line);
+}
+
+thead th {
+  background: #eaf4f1;
+  color: var(--green-dark);
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+tbody tr:nth-child(even) {
+  background: #f7faf9;
+}
+
+tbody tr:hover {
+  background: #eff8f4;
+}
+
+.category-pill {
+  background: var(--mint);
+  color: var(--green-dark);
+  font-weight: 700;
+}
+
+input, select {
+  min-height: 48px;
+  padding: 11px 13px;
+  border: 1px solid #dce7e3;
+  border-radius: 10px;
+  font-family: "DM Sans", sans-serif;
+  transition: border-color .16s ease, box-shadow .16s ease;
+}
+
+input:focus, select:focus {
+  border-color: var(--green);
+  box-shadow: 0 0 0 3px rgba(23, 107, 103, .12);
+  outline: none;
+}
+
+button {
+  min-height: 48px;
+  border-radius: 10px;
+  background: var(--green);
+  font-family: "DM Sans", sans-serif;
+}
+
+button:hover {
+  background: var(--green-dark);
+}
+
+.help-details {
+  border: 1px solid var(--line);
+}
+
+.media-panel {
+  border-radius: 18px;
+}
+
+@media (max-width: 620px) {
+  .expenses-section,
+  .add-expense-section,
+  .media-panel {
+    padding: 20px;
+  }
+}
