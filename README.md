@@ -1,26 +1,45 @@
-# SpendWise — Personal Budget Tracker
+# SpendWise — Personal Budget Tracker (Week 3)
 
-A responsive budget tracker prepared for the PLP Web Development Fundamentals Week 2 assignment.
+SpendWise is a responsive personal budget tracker interface. This Week 3 update focuses on visual identity and CSS presentation while keeping the existing HTML structure and page content.
 
-## Source project note
+## Project files
 
-The Week 1 `index.html` and `style.css` files were not present in the connected GitHub repositories or the available workspace. This repository therefore contains a self-contained SpendWise implementation based on the Week 2 assignment brief. If you have the original Week 1 files, use them as the starting point and merge the Week 2 sections and styles into those files before final grading.
+- `index.html` — the existing page structure, including the page heading, budget overview, expense table, Add Expense form, help section, and budgeting video.
+- `style.css` — the visual design: colour palette, Google Fonts, responsive layout, form and table styling, hover and focus states, and CSS Box Model spacing.
 
-## Files
+## Week 3 design choices
 
-- `index.html` — page structure, sample monthly overview, six sample expenses, category form, help disclosure, brand icon, and budgeting video.
-- `style.css` — responsive visual design, table styling, form states, hover feedback, and advanced selectors.
+### Colour palette
 
-## Week 2 requirements included
+- Primary teal: `#176B67`
+- Dark teal: `#10524F`
+- Soft mint: `#DDF3ED`
+- Page background: `#F4F7F6`
+- White cards: `#FFFFFF`
 
-- Expense table uses `table`, `thead`, `tbody`, `tr`, `th`, and `td`, with Name, Amount, Category, and Date columns.
-- Expense form uses a `form`, labeled controls with matching IDs, a six-category dropdown, and an `Add Expense` button with `type="button"`.
-- Brand image includes `src`, descriptive `alt`, and `width`; budgeting lesson is embedded in an iframe with title, dimensions, and frameborder.
-- A `details` / `summary` disclosure explains how to use the tracker.
-- CSS uses descendant, direct-child, position-based, negation, and focus selectors, as well as alternating rows and a row hover state.
+The colours are stored as CSS custom properties in `:root` so they can be reused consistently.
 
-The page uses hardcoded example expenses. The Add Expense button is intentionally a placeholder; JavaScript behavior is outside this week's scope.
+### Typography
 
-## Run locally
+- **Manrope** is used for headings and important titles.
+- **DM Sans** is used for body text, labels, buttons, and table content.
+- Both fonts are loaded from Google Fonts in the stylesheet, with sans-serif fallbacks.
 
-Open `index.html` in a browser. The Google Fonts and YouTube embed need an internet connection.
+### Expense table and form
+
+The expense table has a clear header, padded cells, borders, alternating row colours, and a hover state. Form labels and controls use consistent spacing, rounded borders, and visible focus feedback. Buttons use the same teal theme as the rest of the page.
+
+### CSS Box Model
+
+The page heading, expense table, form, and supporting sections are visually separated using margin, padding, borders, border-radius, and subtle shadows. The global `box-sizing: border-box` rule makes element sizing predictable.
+
+## Run the project
+
+1. Clone or download this repository.
+2. Keep `index.html` and `style.css` in the same folder.
+3. Open `index.html` in a browser, or use Live Server in VS Code.
+4. An internet connection is needed for Google Fonts and the embedded YouTube video.
+
+## Functionality note
+
+This assignment is focused on CSS visual design. The sample expenses are static, and the Add Expense button remains a placeholder as required by the current lesson scope. No new JavaScript functionality has been added.
